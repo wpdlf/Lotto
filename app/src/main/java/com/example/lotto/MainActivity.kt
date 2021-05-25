@@ -12,6 +12,11 @@ class MainActivity : AppCompatActivity() {
 
         val linkConstellAct = findViewById<CardView>(R.id.linkConstellAct)
         val linkNameAct = findViewById<CardView>(R.id.linkNameAct)
+        val linkResultAct = findViewById<CardView>(R.id.linkResultAct)
+
+        linkResultAct.setOnClickListener {
+            startActivity(Intent(this@MainActivity, ResultActivity::class.java))
+        }
 
         linkConstellAct.setOnClickListener {
             startActivity(Intent(this@MainActivity, ConstellationActivity::class.java))
